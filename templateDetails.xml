@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension type="template" client="site">
+	<name>HappyPC</name>
+	<version>1.0</version>
+	<creationDate>2024</creationDate>
+	<author>Joomla! Project</author>
+	<authorEmail>admin@joomla.org</authorEmail>
+	<copyright>(C) 2017 Open Source Matters, Inc.</copyright>
+	<description>TPL_CASSIOPEIA_XML_DESCRIPTION</description>
+	<inheritable>1</inheritable>
+	<files>
+		<filename>index.php</filename>
+		<filename>joomla.asset.json</filename>
+		<folder>html</folder>
+	</files>
+	<media destination="templates/site/happypc" folder="media">
+		<folder>js</folder>
+		<folder>css</folder>
+		<folder>img</folder>
+	</media>
+	<positions>
+		<position>menu</position>
+        <position>search</position>
+
+        <position>about</position>
+        <position>brands</position>
+		<position>lastProd</position>
+        <position>news</position>
+		<position>help</position>
+		<position>login</position>
+		<position>footer</position>
+	</positions>
+	<config>
+		<fields name="params">
+			<fieldset name="advanced">
+				<field
+					name="logoFile"
+					type="media"
+					default=""
+					label="TPL_CASSIOPEIA_LOGO_LABEL"
+					showon="brand:1"
+				/>
+			</fieldset>
+		</fields>
+
+		<fields name="params">
+			<fieldset name="advanced">
+				<field
+				name="textInput"
+				type="text"
+				label="Введите номер телефона компании"
+				/>
+			</fieldset>
+		</fields>
+	</config>
+</extension>
